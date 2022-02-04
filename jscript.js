@@ -4,8 +4,10 @@ var prezzoBiglietto = kmPercorsi * 0.21;
 
 if(isNaN(kmPercorsi) || isNaN(etàPassegero) ){
     alert('Scrivi numeri')
-}else if(kmPercorsi < 0 || etàPassegero <0  ){
+}else if((kmPercorsi < 0) ||  (etàPassegero < 0)){
     alert('Numeri negativi non validi')
+}else if(etàPassegero > 100){
+    alert('Sopra i 100 anni meglio se stai a casa')
 }
 else{
 
